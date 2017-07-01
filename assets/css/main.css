@@ -43,3 +43,61 @@ table {
 	border-spacing: 0;
 }
 /*ESTILOS CSS*/
+
+/*ESTILOS GENERALES*/
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/*HOME*/
+#home{
+	background-image: url(../img/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	margin: 0 auto;
+}
+.header-logo{
+	margin: 0 auto;
+	text-align: center;
+}
+.header-logo img{
+	width: 100px;
+	margin-top: 50px;
+}
+.header-buttons{
+	text-align: center;
+	position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.btn-log-in{
+	padding: 12px 35px;
+	background-color: transparent;
+	border: 1.5px solid #fff;
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+}
+.btn-sign-up{
+	padding: 12px 35px;
+	color: #fff;
+	font-size: 20px;
+	background: -webkit-linear-gradient(left, #7200BF , #ff00bf); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #7200BF,  #ff00bf); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #7200BF,  #ff00bf); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #7200BF ,  #ff00bf); /* Standard syntax (must be last) */
+    border: none;
+    display: inline-block;
+}
+.btn-sign-up:hover{
+	background: transparent;
+	border: 1.5px solid #ff00bf;
+	color: #ff00bf;
+}
+
+.btn-log-in:hover{
+	color: #ff00bf;
+	border-color: none;
+	background-color: #fff;
+}
