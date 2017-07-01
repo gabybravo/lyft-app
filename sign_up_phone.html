@@ -9,7 +9,7 @@
     <!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
   <!-- ***Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -17,10 +17,8 @@
   <!-- SIGN UP PHONE -->
   <div class="sign-up-phone container">
     <div class="row sign-up-style">
-      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-        <i class="fa fa-angle-left" aria-hidden="true"></i>
-      </div>
-      <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- **ELIMINANDO UNA COL DONDE ESTABA EL ICONO-->
+        <a href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a> <!-- **VINCULANDO PAGS -->
         <h1>Sign Up</h1>
         <p>Join now for free ride credit</p>
       </div>
@@ -40,12 +38,17 @@
           <input type="number" name="phone" class="codigo-pais" id="code-country">
         </div>
     </div>
-    <div class="row sign-up-button">
+    <div class="row"> <!-- **AGREGANDO TEXTO FALTANTE -->
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <button type="button" class="btn btn-sign-up" id="next-user">NEXT</button>
+        <p>We'll send a text to verify your phone</p>
       </div>
     </div>
+   <!-- SAQUE BOTON PARA QUE OCUPARA EL 100% MAS ABAJO -->
   </div> 
+  <!-- ACÁ VA EL BOTON -->
+   <div class="sign-up-button">
+        <button type="button" class="btn btn-sign-up" id="next-user">Next</button><!-- **CAMBIANDO A MINUSCULA TEXTO -->
+  </div>
 	<!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap -->
