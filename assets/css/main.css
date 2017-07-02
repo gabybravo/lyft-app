@@ -165,3 +165,69 @@ body{
 .form-control::placeholder{
 	padding: 30px;
 }
+/*SIGN UP MAP*/
+#map-cont{
+	height: 100vh;
+	padding: 20px;
+	text-align: center;
+}
+.icon-logo{
+	text-align: center;
+	margin: 0 auto;
+}
+.icon-logo img{
+	width: 45px;
+}
+.icon-perfil img{
+	width: 45px;
+	border-radius: 100%;
+	border: 3px solid #fff;
+	float: left;
+}
+.icon-gift{
+	background-color: #fff;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	float: right;
+	margin-right: 20px;
+}
+.icon-gift i{
+	color: #4B4C4C;
+	font-size: 25px;
+	padding: 10px 0;
+	margin-left: -3px;
+}
+
+.icon-gift i:hover{
+	color: #8178aa;
+}
+#trazar-ruta{
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+	width: 100%;
+}
+#trazar{
+	padding: 10px 0;
+	background-color: #8178aa;
+	border-radius: 10px;
+	color: #FFF;
+	font-size: 20px;
+	margin-top: 20px;
+	width: 100%;
+}
+#trazar:hover{
+	border:1px solid #fff;
+	color: #fff;
+	box-sizing: border-box;
+	background-color: transparent;
+}
+.contenedor-bottom{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	padding: 20px;
+}
