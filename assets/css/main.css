@@ -43,7 +43,18 @@ table {
 	border-spacing: 0;
 }
 /*ESTILOS CSS*/
+
+/*Seccion MAPA*/
 #map {
-        height: 400px;
-        width: 100%;
-       }
+    height: 400px;
+    width: 100%;
+}
+
+.logoW{
+	width: 10%;
+}
+
+.pictureP{
+	width: 10%;
+}
+
