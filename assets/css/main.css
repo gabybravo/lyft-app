@@ -43,3 +43,7 @@ table {
 	border-spacing: 0;
 }
 /*ESTILOS CSS*/
+#map {
+        height: 400px;
+        width: 100%;
+       }
