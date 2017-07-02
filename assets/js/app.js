@@ -22,8 +22,14 @@ function success(position) {
  map: map,
  title:"Usted está aquí."
  });
+//Esta función es la de autocomplete para el input
+var directionsService = new google.maps.DirectionsService;
+var directionsDisplay = new google.maps.DirectionsRenderer;
+var input = (document.getElementById('trazar-ruta'));
+var autocomplete = new google.maps.places.Autocomplete(input);
+    autocomplete.bindTo('bounds', map);
 }
-
+// función error de soporte para geolocalización
 function error(msg) {
  var status = document.getElementById('status');
  status.innerHTML= "Error [" + error.code + "]: " + error.message; 
@@ -33,5 +39,6 @@ if (navigator.geolocation) {
  navigator.geolocation.getCurrentPosition(success, error,{maximumAge:60000, timeout: 4000});
 } else {
  error('Su navegador no tiene soporte para su geolocalización');
-}
+};
+/*Funcion para autocomplete*/
 
