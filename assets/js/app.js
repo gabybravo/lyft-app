@@ -1,4 +1,3 @@
-alert("holi");
 
 $(document).ready(function(){      
   
@@ -23,28 +22,40 @@ $(document).ready(function(){
       }else{
         window.location.href="sign_up_user.html";
       };
+
     });
+    
   });
+
+   });
+
+$(document).ready(function(){  
 
 $("#next-user").click(function(){      
    
     /*Captura de código*/     
 
-var res=$(code).val();
-  /*Guardando los datos en el LocalStorage*/ 
-  localStorage.setItem(“Código”, res);   
-});   
+/*var res=$(code).val();
+ Guardando los datos en el LocalStorage 
+  localStorage.setItem(“Código”,res);*/
+  
+  localStorage["Código"]=$(code).val();
 
-/*Funcion Cargar y Mostrar datos*/ 
-    
+   }); 
+ }); 
+
+$(document).ready(function(){  
   $("#boton-cargar").click(function(){ 
 
     /*Obtener datos almacenados*/ 
     var codigo = localStorage.getItem(“Código”); 
 
+alert(codigo);
+
   /*Mostrar datos almacenados*/    
 
-  $(codigo).html();   
-    });  
+  /*$(codigo).html(); */  
+    });    
 }); 
-});
+
+
