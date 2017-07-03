@@ -1,3 +1,7 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
 /*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,3 +47,52 @@ table {
 	border-spacing: 0;
 }
 /*ESTILOS CSS*/
+
+.input-group-addon {
+	background-color: transparent;
+
+}
+
+.form-control {
+	border-left-color: transparent;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-group  {
+    margin-bottom: 15px;
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+.container .line{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.checkbox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-lg {
+    border-radius: 0;
+}
+
+.ancho-12 {
+	padding-right: 0; 
+    padding-left: 0; 
+}
+
+.linea {
+	background-color: #eee;
+	width: 100%;
+	height: 1px;
+	margin: 10px 0;
+}
+
+.btn-primary {
+	background-color: #f300b2;
+    border-color: transparent;
