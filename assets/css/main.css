@@ -54,7 +54,7 @@ body{
 .btn-sign-up{
 	width: 100%;
 	padding: 20px 40px;
-	background-color: #ff00bf;
+	background-color: #FF00BF;
 	border-radius: none;
 	color: #FFF;
 	font-size: 20px;
@@ -213,6 +213,10 @@ input[type=number] {
     margin-top: 25px;
 }
 
+.icon-perfil {
+	padding-top: 10px;
+}
+
 .icon-perfil img{
 	width: 45px;
 	border-radius: 100%;
@@ -246,10 +250,10 @@ input[type=number] {
 #trazar-ruta{
 	margin: 0 auto;
 	text-align: center;
-	padding: 15px;
+	padding: 10px;
 	border-radius: 10px;
 	border: none;
-	width: 100%;
+	width: 90%;
 }
 
 #trazar{
@@ -258,8 +262,8 @@ input[type=number] {
 	border-radius: 10px;
 	color: #FFF;
 	font-size: 20px;
-	margin-top: 20px;
-	width: 100%;
+	margin-top: 10px;
+	width: 90%;
 }
 
 #trazar:hover{
@@ -271,9 +275,11 @@ input[type=number] {
 
 .contenedor-bottom{
 	position: absolute;
-	bottom: 10px;
+	bottom: -383px;
 	width: 100%;
 	padding: 20px;
+	z-index: 1;
+	padding-left: 50px;
 }
 
 /*PERFIL USUARIO*/
@@ -346,22 +352,58 @@ input[type=number] {
 }
 
 #map {
-	position: absolute;
-	z-index: -1;
-    height: 100vh;
+	z-index: 0;
     width: 100%;
     top: 0px;
+    position: relative;
+	padding-bottom: 75%; 
+	height: 0;
+	overflow: hidden;
 }
 
-.logoW{
+.logoW {
 	width: 10%;
 }
 
-.pictureP{
+.pictureP {
 	width: 100%
 }
 
-.icon-perfil {
-	padding-top: 10px;
+.perfil-foto img {
+	width: 100px;
+	margin-left: 25px;
+    margin-top: 25px;
 }
 
+.perfil-foto {
+	text-align: center;
+}
+
+.naveg h1 {
+	color: black;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.view-profile {
+	font-size: 10px;
+	color: #6D6D6D;
+	text-align: center;
+}
+
+hr {
+	margin-top:10px;
+}
+
+.links-menu a {
+	margin-left: 20px;
+	color: #434343;
+}
+
+.links-menu a:hover {
+	color: #FF00BF;
+}
+
+.manubrio {
+	font-size: 10px;
+}

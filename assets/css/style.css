@@ -1,15 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color:#4B8AD6;
-  color:#fff;
-  font-family: helvetica, arial, sans-serif;
+  background-color: #4B4C4C;
 }
 
 #sidebar {
   background: whitesmoke;
-  width: 205px;
-  height: 466px;
+  width: 215px;
+  height: 532px;
   display: block;
   position: absolute;
   left: -220px;
@@ -22,7 +18,6 @@ body {
 
 #sidebar.visible {
   left: 0;
-  opacity: 0.7;
   transition: left 0.3s linear;
 }
 
