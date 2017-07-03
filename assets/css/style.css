@@ -1,0 +1,39 @@
+body {
+  background-color: #4B4C4C;
+}
+
+#sidebar {
+  background: whitesmoke;
+  width: 215px;
+  height: 532px;
+  display: block;
+  position: absolute;
+  left: -220px;
+  top: 10px;
+  margin: -15px;
+  transition: left 0.3s linear;
+  z-index: 10;
+  margin-left: -33px;
+}
+
+#sidebar.visible {
+  left: 0;
+  transition: left 0.3s linear;
+}
+
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  right: -75px;
+}
+
+
+
+
+
