@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#4B8AD6;
+  color:#fff;
+  font-family: helvetica, arial, sans-serif;
+}
+
+#sidebar {
+  background: whitesmoke;
+  width: 205px;
+  height: 466px;
+  display: block;
+  position: absolute;
+  left: -220px;
+  top: 10px;
+  margin: -15px;
+  transition: left 0.3s linear;
+  z-index: 10;
+  margin-left: -33px;
+}
+
+#sidebar.visible {
+  left: 0;
+  opacity: 0.7;
+  transition: left 0.3s linear;
+}
+
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  right: -75px;
+}
+
+
+
+
+
