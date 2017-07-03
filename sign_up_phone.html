@@ -10,6 +10,18 @@
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
   <!-- ***Fuentes -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/css/intlTelInput.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
 	<!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -35,7 +47,7 @@
         </div>
         <!-- aquí va el input -->
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="number" name="phone" class="codigo-pais form-control" id="code-country"> <!-- **AGREGANDO CLASE FORM-CONTROL PARA TENER ESTILOS CSS -->
+          <input type="tel" name="phone" class="codigo-pais form-control" id="code-country"> <!-- **AGREGANDO CLASE FORM-CONTROL PARA TENER ESTILOS CSS -->
         </div>
     </div>
     <div class="row"> <!-- **AGREGANDO TEXTO FALTANTE -->
@@ -51,6 +63,24 @@
   </div>
 	<!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/js/intlTelInput.min.js"></script>
+
+  <script>
+    $("#code-country").intlTelInput({
+      autoHideDialCode: false,
+      nationalMode: false,
+      initialCountry: "auto",
+      geoIpLookup: function(callback) {
+        $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+          var countryCode = (resp && resp.country) ? resp.country : "";
+          callback(countryCode);
+        });
+      },
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/js/utils.js" // just for formatting/placeholders etc
+    });
+  </script>
+  
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- JS -->
