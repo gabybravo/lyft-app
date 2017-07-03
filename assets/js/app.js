@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  //localStorage
+  $(window).unload(saveSettings);
+  loadSettings();
+
 	//Generación de código aleatorio
   var code; //código
 	$("#next-user").click(function(){
@@ -23,6 +27,17 @@ $(document).ready(function(){
 		});
 	});
 });
+
+//Funciones localStorage
+function loadSettings() {
+  $('#code-country').val(localStorage.phone);
+  $("#confirmCode").val(localStorage.confirmCode);
+}
+
+function saveSettings() {
+  localStorage.phone = $('#code-country').val();
+  localStorage.confirmCode = $("#confirmCode").val();
+}
 
 //funcion que nos ubica en el mapa
 function success(position) {
@@ -64,3 +79,4 @@ if (navigator.geolocation) {
 } else {
  error('Su navegador no tiene soporte para su geolocalización');
 };
+
