@@ -146,7 +146,18 @@ body{
 	text-align: center;
 	margin-top: 15px;
 }
+.codigo-pais{
+	width: 100%;	
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+input[type=number] {
+    -moz-appearance:textfield;
+}
 /*SIGN UP USER*/
 .sign-up-input{
 	border-radius: 10px;
