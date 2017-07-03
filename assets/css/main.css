@@ -44,6 +44,7 @@ table {
 }
 /*ESTILOS CSS*/
 
+<<<<<<< HEAD
 /*ESTILOS GENERALES*/
 body{
 	font-family: 'Lato', sans-serif;
@@ -291,3 +292,19 @@ input[type=number] {
 	font-size: 13px;
 	width: 80%;
 }
+=======
+/*Seccion MAPA*/
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.logoW{
+	width: 10%;
+}
+
+.pictureP{
+	width: 10%;
+}
+
+>>>>>>> c9d2e0fc391f779073c13db8f2960c26e58939fa
