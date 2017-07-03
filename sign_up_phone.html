@@ -70,6 +70,8 @@
     $("#code-country").intlTelInput({
       autoHideDialCode: false,
       nationalMode: false,
+      separateDialCode: true,
+      preferredCountries: ['CL', 'MX', 'PE'],
       initialCountry: "auto",
       geoIpLookup: function(callback) {
         $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
