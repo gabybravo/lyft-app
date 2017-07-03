@@ -44,12 +44,13 @@ table {
 }
 /*ESTILOS CSS*/
 
-<<<<<<< HEAD
 /*ESTILOS GENERALES*/
+
 body{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #4B4C4C;
 }
+
 .btn-sign-up{
 	width: 100%;
 	padding: 20px 40px;
@@ -58,16 +59,19 @@ body{
 	color: #FFF;
 	font-size: 20px;
 }
+
 .sign-up-button{
 	text-align: center;
 	position: absolute;
     bottom: 30px;
     width: 100%;
 }
+
 .btn-sign-up:hover{
 	color: #fff;
 	background-color: #7200BF;
 }
+
 .sign-up-style{
 	margin: 0 auto;
 	text-align: center;
@@ -75,20 +79,24 @@ body{
 	border-bottom: 1px solid #C3C2C2;
 	margin-bottom: 10px;
 }
+
 .sign-up-style h1{
 	font-size: 20px;
 	margin-bottom: 10px;
 }
+
 .fa-angle-left{
 	color: #4B4C4C;
 	font-size: 20px;
 	float: left;
 }
+
 .fa-angle-left:hover{
 	color: #ff00bf;
 }
 
 /*HOME*/
+
 #home{
 	background-image: url(../img/fondo.jpg);
 	background-size: cover;
@@ -97,20 +105,24 @@ body{
 	width: 100%;
 	margin: 0 auto;
 }
+
 .header-logo{
 	margin: 0 auto;
 	text-align: center;
 }
+
 .header-logo img{
 	width: 100px;
 	margin-top: 50px;
 }
+
 .header-buttons{
 	text-align: center;
 	position: absolute;
     bottom: 30px;
     width: 100%;
 }
+
 .btn-log-in{
 	padding: 12px 35px;
 	background-color: transparent;
@@ -119,6 +131,7 @@ body{
 	font-size: 20px;
 	display: inline-block;
 }
+
 #signup{
 	padding: 12px 35px;
 	color: #fff;
@@ -130,6 +143,7 @@ body{
     border: none;
     display: inline-block;
 }
+
 #signup:hover{
 	background: transparent;
 	border: 1.5px solid #ff00bf;
@@ -143,13 +157,16 @@ body{
 }
 
 /*SIGN UP PHONE*/
+
 .sign-up-phone p{
 	text-align: center;
 	margin-top: 15px;
 }
+
 .codigo-pais{
 	width: 100%;	
 }
+
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -159,42 +176,50 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield;
 }
+
 /*SIGN UP USER*/
+
 .sign-up-input{
 	border-radius: 10px;
 	margin-bottom: 10px;
 }
+
 .sign-up-form{
 	padding: 50px 20px;
 	text-align: center;
 }
+
 .fa-envelope-o, .fa-user-o{
 	position: absolute;
 	z-index: 1000;
 	padding: 10px;
 	color: #C3C2C2;
 }
+
 .form-control::placeholder{
 	padding: 30px;
 }
+
 /*SIGN UP MAP*/
-#map-cont{
-	height: 100vh;
-	text-align: center;
-}
+
 .icon-logo{
 	text-align: center;
 	margin: 0 auto;
 }
+
 .icon-logo img{
 	width: 45px;
+	margin-left: -28px;
+    margin-top: 25px;
 }
+
 .icon-perfil img{
 	width: 45px;
 	border-radius: 100%;
 	border: 3px solid #fff;
-	float: left;
+	margin-right: 20px;
 }
+
 .icon-gift{
 	background-color: #fff;
 	width: 45px;
@@ -202,17 +227,22 @@ input[type=number] {
 	border-radius: 100%;
 	float: right;
 	margin-right: 20px;
+	top: 15px;
+	z-index: 10;
 }
+
 .icon-gift i{
 	color: #4B4C4C;
 	font-size: 25px;
 	padding: 10px 0;
 	margin-left: -3px;
+	padding-top: 10px;
 }
 
 .icon-gift i:hover{
 	color: #8178aa;
 }
+
 #trazar-ruta{
 	margin: 0 auto;
 	text-align: center;
@@ -221,6 +251,7 @@ input[type=number] {
 	border: none;
 	width: 100%;
 }
+
 #trazar{
 	padding: 10px 0;
 	background-color: #8178aa;
@@ -230,23 +261,28 @@ input[type=number] {
 	margin-top: 20px;
 	width: 100%;
 }
+
 #trazar:hover{
 	border:1px solid #fff;
 	color: #fff;
 	box-sizing: border-box;
 	background-color: transparent;
 }
+
 .contenedor-bottom{
 	position: absolute;
 	bottom: 10px;
 	width: 100%;
 	padding: 20px;
 }
+
 /*PERFIL USUARIO*/
+
 .perfil-user{
 	width: 100%;
 	height: 100vh;
 }
+
 .perfil-header{
 	background-image: url(../img/perfil.jpg);
 	background-size: cover;
@@ -254,20 +290,24 @@ input[type=number] {
 	height: 40vh;
 	margin-bottom: 30px;
 }
+
 #edit{
 	position: absolute;
 	right: 0;
 	margin: 20px;
 	background-color: #E7E8E6;
 }
+
 #edit:hover{
 	background-color: #fff;
 }
+
 .perfil-user h1{
 	font-size: 40px;
 	margin: 0 auto;
 	text-align: center;
 }
+
 .perfil-user h6{
 	text-align: center;
 	font-size: 12px;
@@ -275,34 +315,42 @@ input[type=number] {
 	padding: 10px;
 	margin: 10px 20px;
 }
+
 .iconos-perfil {
 	margin: 40px 0;
 }
+
 .iconos-perfil .row{
 	margin: 10px 0;
 }
+
 .iconos-perfil i{
 	display: inline-block;
 	font-size: 20px;
 	padding: 10px;
 }
+
 .iconos-perfil p{
 	display: inline-block;
 	font-size: 13px;
 	width: 80%;
 }
 
-/*Seccion MAPA*/
+/*Sección MAPA*/
+
+.naveg {
+	padding-left: 33px;
+	margin-top: 10px;
+	margin: 0px;
+	vertical-align: top;
+}
+
 #map {
 	position: absolute;
 	z-index: -1;
     height: 100vh;
     width: 100%;
-    top: -10px;
-}
-
-.container-fluid {
-	padding: 0;
+    top: 0px;
 }
 
 .logoW{
@@ -310,6 +358,10 @@ input[type=number] {
 }
 
 .pictureP{
-	width: 100%;
+	width: 100%
+}
+
+.icon-perfil {
+	padding-top: 10px;
 }
 

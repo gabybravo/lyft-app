@@ -8,28 +8,29 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
-  <!-- ***Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<!-- Estilos -->
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- Estilos Generales -->
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- Estilos Menú Desplegable -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body id="map">
-  <div>
+  <div class="naveg">
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-perfil">
         <!-- AQUÍ VA LA IMAGEN PERFIL PUNTOS EXTRAS -->
-        <div id="sidebar"> 
-       <div id="sidebar-btn"><a href="#" id="menu-perfil"><img class= "pictureP" src="assets/img/perfil.jpg" alt="placeholder+image"></a>
-       </div>
-   </div>
+      <div id="sidebar"> 
+        <div id="sidebar-btn"><a href="#" id="menu-perfil"><img class= "pictureP" src="assets/img/perfil.jpg" alt="placeholder"></a>
       </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-logo">
-        <img class= "logoW" src="assets/img/logo-white.png" alt="user">
       </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-gift">
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-logo">
+        <img class="logoW" src="assets/img/logo-white.png" alt="user">
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-gift">
         <a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a>
-      </div>
+    </div>
   </div>
 
   <!-- AQUÍ ESTA EL INPUT DEL MAPA -->
@@ -38,9 +39,7 @@
       <button type="button" class="btn btn-pickup" id="trazar">Set pickup</button>
   </div>
 
-
-  <!-- Maps con este src se puede hacer lo del autocomplete-->
-  <!--CLAVE AIzaSyCHmt5g1VxNEMohzg_AcgaxXYmeeh-P_vM -->
+  <!--Google Maps -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHmt5g1VxNEMohzg_AcgaxXYmeeh-P_vM&callback=initMap"></script>
   <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
 	<!-- jQuery -->
@@ -49,7 +48,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- JS -->
   <script type="text/javascript" src="assets/js/app.js"></script>
+  <!-- JS Menú -->
   <script type="text/javascript" src="assets/js/menu.js"></script>
-  <!-- AQUÍ VA MAPITA -->
 </body>
 </html>
