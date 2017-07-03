@@ -39,3 +39,4 @@ if (navigator.geolocation) {
  error('Su navegador no tiene soporte para su geolocalización');
 };
 
+

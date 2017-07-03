@@ -5,21 +5,24 @@
 	<title>Lyft App</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
 	<!-- Bootstrap Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Fontawesome -->
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
   <!-- ***Fuentes -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
-  <!-- MAPA-->
-  <div class="container" id="map-cont">
-    <div class="row">
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-perfil">
+
+<body id="map">
+  <div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-perfil">
         <!-- AQUÍ VA LA IMAGEN PERFIL PUNTOS EXTRAS -->
-        <a href="#" id="menu-perfil"><img class= "pictureP" src="assets/img/perfil.jpg" alt="placeholder+image"></a>
+        <div id="sidebar"> 
+       <div id="sidebar-btn"><a href="#" id="menu-perfil"><img class= "pictureP" src="assets/img/perfil.jpg" alt="placeholder+image"></a>
+       </div>
+   </div>
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-logo">
         <img class= "logoW" src="assets/img/logo-white.png" alt="user">
@@ -27,34 +30,26 @@
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-gift">
         <a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a>
       </div>
-    </div>
-    <div class="row">
-    <!-- AQUÍ VA EL MAPITA -->
-     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="map" id="map"></div>
-     </div>
-    </div>
-    <!-- AQUÍ ESTA EL INPUT DEL MAPA -->
   </div>
-<<<<<<< HEAD
+
+  <!-- AQUÍ ESTA EL INPUT DEL MAPA -->
   <div class="contenedor-bottom"> <!-- **AGREGE UNA CLASE PARA JUNTARLOS Y BAJARLOS Y LO SEPARE DE CONTAINER Y ROW-->
       <input type="text" name="ruta" class="ruta-input" id="trazar-ruta">
-      <button type="button" class="btn btn-pickup" id="trazar">Set pickup</button> <!-- **CAMBIE LA S A MAYUSCULA -->
+      <button type="button" class="btn btn-pickup" id="trazar">Set pickup</button>
+  </div>
 
-    </div>
 
-=======
   <!-- Maps con este src se puede hacer lo del autocomplete-->
   <!--CLAVE AIzaSyCHmt5g1VxNEMohzg_AcgaxXYmeeh-P_vM -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHmt5g1VxNEMohzg_AcgaxXYmeeh-P_vM&callback=initMap"></script>
   <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
->>>>>>> c9d2e0fc391f779073c13db8f2960c26e58939fa
 	<!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- JS -->
   <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/menu.js"></script>
   <!-- AQUÍ VA MAPITA -->
 </body>
 </html>

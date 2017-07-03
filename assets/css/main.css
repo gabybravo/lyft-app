@@ -180,7 +180,6 @@ input[type=number] {
 /*SIGN UP MAP*/
 #map-cont{
 	height: 100vh;
-	padding: 20px;
 	text-align: center;
 }
 .icon-logo{
@@ -292,11 +291,18 @@ input[type=number] {
 	font-size: 13px;
 	width: 80%;
 }
-=======
+
 /*Seccion MAPA*/
 #map {
-    height: 400px;
+	position: absolute;
+	z-index: -1;
+    height: 100vh;
     width: 100%;
+    top: -10px;
+}
+
+.container-fluid {
+	padding: 0;
 }
 
 .logoW{
@@ -304,7 +310,6 @@ input[type=number] {
 }
 
 .pictureP{
-	width: 10%;
+	width: 100%;
 }
 
->>>>>>> c9d2e0fc391f779073c13db8f2960c26e58939fa
