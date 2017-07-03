@@ -404,6 +404,30 @@ hr {
 	color: #FF00BF;
 }
 
+<<<<<<< HEAD
 .manubrio {
 	font-size: 10px;
 }
+=======
+/* MODAL */
+#myModalLabel{
+	color: #ff00bf;
+	font-weight: bold;
+}
+
+.btn-primary{
+	background-color: #ff00bf;
+	color: #FFF;
+	border-color: #ff00bf;
+}
+.btn-primary:hover{
+	background-color: #7200BF;
+	color: #FFF;
+}
+.span-style{
+	background-color: rgba(255, 0, 191, .6);
+	color: #FFF;
+	margin: .5em auto;
+	padding: .5em;
+}
+>>>>>>> 141f86a60be54d5bd2420df4d88319eed3bd4272
