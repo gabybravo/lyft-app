@@ -4,7 +4,6 @@ $(document).ready(function(){
 		var UserError  = true,
 			EmailError = true;
 
-
 	/*----------* NAME *----------*/
 	$("#name").blur(function() {
 		if($(this).val()==''){
@@ -84,9 +83,9 @@ $(document).ready(function(){
 
 		if(UserError === true || EmailError === true){
 		EmailError = true;
-}
+		}
 
-});
+	});
 
 });
 
