@@ -1,7 +1,3 @@
-* {
-	font-family: 'Lato', sans-serif;
-}
-
 /*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,8 +15,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Raleway', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -47,6 +42,20 @@ table {
 	border-spacing: 0;
 }
 /*ESTILOS CSS*/
+
+.sign-up-style i {
+	font-size: 30px;
+}
+
+.t-signup{
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 7px;
+}
+
+.s-signup{
+	margin-top: 20px;
+}
 
 .input-group-addon {
 	background-color: transparent;
@@ -96,3 +105,27 @@ hr {
 .btn-primary {
 	background-color: #f300b2;
     border-color: transparent;
+}
+
+label input{
+	width: 20px;
+	height: 20px;
+}
+
+label span{
+	margin-left: 10px;
+}
+
+input[type=checkbox]{
+	margin: 0;
+}
+
+.checkbox input[type=checkbox] {
+	margin-top: -2px;
+}
+
+.span-style{
+	background-color: rgba(255, 0, 191, .6);
+	color: #FFF;
+	padding: 10px;
+}
