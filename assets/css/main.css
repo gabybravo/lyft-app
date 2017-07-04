@@ -51,6 +51,10 @@ table {
   .iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/img/flags@2x.png");}
 }
 
+input.error {
+  border: 1px solid #FF7C7C;
+}
+
 /*ESTILOS GENERALES*/
 body{
 	font-family: 'Lato', sans-serif;

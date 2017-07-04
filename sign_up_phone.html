@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Lyft App</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
-	<!-- Bootstrap Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Fontawesome -->
-	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+  <meta charset="UTF-8">
+  <title>Lyft App</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+  <!-- Bootstrap Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
   <!-- ***Fuentes -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/css/intlTelInput.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/css/intlTelInput.css" rel="stylesheet">
 
 
 
@@ -22,70 +24,102 @@
 
 
 
-	<!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
+
 <body>
   <!-- SIGN UP PHONE -->
   <div class="sign-up-phone container">
     <div class="row sign-up-style">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- **ELIMINANDO UNA COL DONDE ESTABA EL ICONO-->
-        <a href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a> <!-- **VINCULANDO PAGS -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <!-- **ELIMINANDO UNA COL DONDE ESTABA EL ICONO-->
+        <a href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        <!-- **VINCULANDO PAGS -->
         <h1>Sign Up</h1>
         <p>Join now for free ride credit</p>
       </div>
     </div>
     <div class="row sign-up-input">
-        <!-- aquí va select -->
-        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-          <form class="form-horizontal">
-            <div class="form-group">
-                <label>Select Country</label><br>
-                <div class="flagstrap" data-input-name="country"></div>
-            </div>
-         </form>
-        </div>
-        <!-- aquí va el input -->
-        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="tel" name="phone" class="codigo-pais form-control" id="code-country"> <!-- **AGREGANDO CLASE FORM-CONTROL PARA TENER ESTILOS CSS -->
-        </div>
+      <!-- aquí va select -->
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label>Select Country</label><br>
+            <div class="flagstrap" data-input-name="country"></div>
+          </div>
+        </form>
+      </div>
+      <!-- aquí va el input -->
+      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <input type="tel" name="phone" class="codigo-pais form-control" id="code-country">
+        <!-- **AGREGANDO CLASE FORM-CONTROL PARA TENER ESTILOS CSS -->
+      </div>
     </div>
-    <div class="row"> <!-- **AGREGANDO TEXTO FALTANTE -->
+    <div class="row">
+      <!-- **AGREGANDO TEXTO FALTANTE -->
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <p>We'll send a text to verify your phone</p>
       </div>
     </div>
-   <!-- SAQUE BOTON PARA QUE OCUPARA EL 100% MAS ABAJO -->
-  </div> 
-  <!-- ACÁ VA EL BOTON -->
-   <div class="sign-up-button">
-        <button type="button" class="btn btn-sign-up" id="next-user">Next</button><!-- **CAMBIANDO A MINUSCULA TEXTO -->
+    <!-- SAQUE BOTON PARA QUE OCUPARA EL 100% MAS ABAJO -->
   </div>
-	<!-- jQuery -->
+  <!-- ACÁ VA EL BOTON -->
+  <div class="sign-up-button">
+    <button type="button" class="btn btn-sign-up" id="next-user">Next</button>
+    <!-- **CAMBIANDO A MINUSCULA TEXTO -->
+  </div>
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/js/intlTelInput.min.js"></script>
 
   <script>
-    $("#code-country").intlTelInput({
+    var telInput = $("#code-country");
+
+    telInput.intlTelInput({
       autoHideDialCode: false,
       nationalMode: false,
       separateDialCode: true,
       preferredCountries: ['CL', 'MX', 'PE'],
       initialCountry: "auto",
-      geoIpLookup: function(callback) {
-        $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+      geoIpLookup: function (callback) {
+        $.get('http://ipinfo.io', function () { }, "jsonp").always(function (resp) {
           var countryCode = (resp && resp.country) ? resp.country : "";
           callback(countryCode);
         });
       },
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/js/utils.js" // just for formatting/placeholders etc
     });
+
+    var reset = function () {
+      telInput.removeClass("error");
+      // errorMsg.addClass("hide");
+      // validMsg.addClass("hide");
+    };
+
+    // on blur: validate
+    telInput.blur(function () {
+      reset();
+      if ($.trim(telInput.val())) {
+        if (telInput.intlTelInput("isValidNumber")) {
+          //validMsg.removeClass("hide");
+        } else {
+          telInput.addClass("error");
+          //errorMsg.removeClass("hide");
+        }
+      }
+    });
+
+    // on keyup / change flag: reset
+    telInput.on("keyup change", reset);
   </script>
-  
+
   <!-- Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
   <!-- JS -->
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
+
 </html>
