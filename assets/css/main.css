@@ -43,11 +43,6 @@ table {
 }
 
 /*ESTILOS CSS*/
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
 .iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/img/flags.png");}
   
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -58,12 +53,10 @@ input.error {
   border: 1px solid #FF7C7C;
 }
 
->>>>>>> 47af20ebafa3ff55745f873f62e727c92ac62f87
 /*ESTILOS GENERALES*/
 
 body {
 	font-family: 'Raleway', sans-serif;
-	color: #4B4C4C;
 }
 
 .btn-sign-up {
@@ -424,10 +417,6 @@ a.ultimo-fondo {
 	color: #8178aa;
 }
 
-body {
-  background-color: #4B4C4C;
-}
-
 #sidebar {
   background: whitesmoke;
   width: 235px;
@@ -484,7 +473,7 @@ body {
 	padding: .5em;
 }
 
-=======
+
 .sign-up-style i {
 	font-size: 30px;
 }
@@ -571,4 +560,4 @@ input[type=checkbox]{
 	color: #FFF;
 	padding: 10px;
 }
->>>>>>> origin/rama-pau
+

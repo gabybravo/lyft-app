@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 $(document).ready(function(){
 	'use strict';
 		// error variables
 		var UserError  = true,
 		EmailError = true;
-=======
+
 //funcion que nos ubica en el mapa
 function success(position) {
   var directionsService = new google.maps.DirectionsService;
@@ -68,7 +67,7 @@ if (navigator.geolocation) {
 } else {
   error('Su navegador no tiene soporte para su geolocalización');
 };
->>>>>>> 9f28124f20775a79dd1f861aa612689d5d1c5147
+
 
 
 		/*----------* NAME *----------*/
