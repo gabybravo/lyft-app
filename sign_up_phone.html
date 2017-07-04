@@ -10,9 +10,11 @@
   <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
   <!-- ***Fuentes -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <!-- Estilos -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/css/intlTelInput.css" rel="stylesheet">
+<!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
+
 <body>
   <!-- SIGN UP PHONE -->
   <div class="sign-up-phone container">
@@ -35,7 +37,7 @@
         </div>
         <!-- aquí va el input -->
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <input type="number" name="phone" class="codigo-pais form-control" id="code-country"> <!-- **AGREGANDO CLASE FORM-CONTROL PARA TENER ESTILOS CSS -->
+          <input type="tel" name="phone" class="codigo-pais form-control" id="code-country"> <!-- **AGREGANDO CLASE FORM-CONTROL PARA TENER ESTILOS CSS -->
         </div>
     </div>
     <div class="row"> <!-- **AGREGANDO TEXTO FALTANTE -->
@@ -44,42 +46,21 @@
       </div>
     </div>
    <!-- SAQUE BOTON PARA QUE OCUPARA EL 100% MAS ABAJO -->
-  </div>
+  </div> 
   <!-- ACÁ VA EL BOTON -->
-  <div class="sign-up-button">
-    <!-- Button trigger modal-->
-    <button type="button" class="btn btn-sign-up" id="next-user" data-toggle="modal" data-target="#myModal">Next</button><!-- **CAMBIANDO A MINUSCULA TEXTO -->
+   <div class="sign-up-button">
+        <button type="button" class="btn btn-sign-up" id="next-user">Next</button><!-- **CAMBIANDO A MINUSCULA TEXTO -->
   </div>
-  <!-- MODAL -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title text-uppercase" id="myModalLabel">Confirm your code</h4>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="confirmCode" class="control-label">Write your Code here:<br>(Code is case sensitive)</label>
-              <input type="text" class="form-control" id="confirmCode">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" id="confirm-btn">CONFIRM</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/js/intlTelInput.min.js"></script>
+
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- JS -->
-  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/pais.js"></script>
   <script type="text/javascript" src="assets/js/random.js"></script>
 </body>
 </html>
