@@ -15,8 +15,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -26,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Raleway', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -45,6 +44,7 @@ table {
 
 /*ESTILOS CSS*/
 
+<<<<<<< HEAD
 /*ESTILOS GENERALES*/
 
 body {
@@ -470,3 +470,91 @@ body {
 	padding: .5em;
 }
 
+=======
+.sign-up-style i {
+	font-size: 30px;
+}
+
+.t-signup{
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 7px;
+}
+
+.s-signup{
+	margin-top: 20px;
+}
+
+.input-group-addon {
+	background-color: transparent;
+
+}
+
+.form-control {
+	border-left-color: transparent;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-group  {
+    margin-bottom: 15px;
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+.container .line{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.checkbox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-lg {
+    border-radius: 0;
+}
+
+.ancho-12 {
+	padding-right: 0; 
+    padding-left: 0; 
+}
+
+.linea {
+	background-color: #eee;
+	width: 100%;
+	height: 1px;
+	margin: 10px 0;
+}
+
+.btn-primary {
+	background-color: #f300b2;
+    border-color: transparent;
+}
+
+label input{
+	width: 20px;
+	height: 20px;
+}
+
+label span{
+	margin-left: 10px;
+}
+
+input[type=checkbox]{
+	margin: 0;
+}
+
+.checkbox input[type=checkbox] {
+	margin-top: -2px;
+}
+
+.span-style{
+	background-color: rgba(255, 0, 191, .6);
+	color: #FFF;
+	padding: 10px;
+}
+>>>>>>> origin/rama-pau
