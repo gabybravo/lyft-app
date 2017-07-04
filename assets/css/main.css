@@ -494,13 +494,26 @@ a.ultimo-fondo {
 }
 
 .form-control {
-	border-left-color: transparent;
 	-webkit-box-shadow: none;
     box-shadow: none;
 }
 
-.input-group  {
+.input-group-lg {
     margin-bottom: 15px;
+}
+
+.i-email {
+	background-image: url(../docs/icon-email.png);
+	background-size: 30px;
+	background-position: 15px;
+    background-repeat: no-repeat;
+}
+
+.i-user{
+	background-image: url(../docs/icon-user.png);
+	background-size: 30px;
+	background-position: 15px;
+    background-repeat: no-repeat;
 }
 
 hr {
@@ -538,16 +551,16 @@ hr {
     border-color: transparent;
 }
 
-label input{
+label input {
 	width: 20px;
 	height: 20px;
 }
 
-label span{
+label span {
 	margin-left: 10px;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
 	margin: 0;
 }
 
@@ -555,9 +568,14 @@ input[type=checkbox]{
 	margin-top: -2px;
 }
 
-.span-style{
+.text-danger-lyft {
+	color: #f300b2;
+	margin: 10px;
+	display: block;
+}
+
+.span-style {
 	background-color: rgba(255, 0, 191, .6);
 	color: #FFF;
 	padding: 10px;
 }
-
