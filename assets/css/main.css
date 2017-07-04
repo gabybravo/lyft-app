@@ -255,7 +255,7 @@ input[type=number] {
 	color: #8178aa;
 }
 
-#trazar-ruta {
+#destino {
 	margin: 0 auto;
 	text-align: center;
 	padding: 10px;
@@ -264,7 +264,7 @@ input[type=number] {
 	width: 90%;
 }
 
-#trazar {
+#ruta {
 	padding: 10px 0;
 	background-color: #8178aa;
 	border-radius: 10px;
@@ -274,7 +274,7 @@ input[type=number] {
 	width: 90%;
 }
 
-#trazar:hover {
+#ruta:hover {
 	border:1px solid #fff;
 	color: #fff;
 	box-sizing: border-box;
@@ -283,10 +283,10 @@ input[type=number] {
 
 .contenedor-bottom {
 	position: absolute;
-	bottom: -383px;
+	bottom: 65px;
 	width: 100%;
 	padding: 20px;
-	z-index: 1;
+	z-index: 10;
 	padding-left: 50px;
 }
 
@@ -366,7 +366,6 @@ input[type=number] {
     top: 0px;
     position: relative;
 	padding-bottom: 75%; 
-	height: 0;
 	overflow: hidden;
 }
 
@@ -579,3 +578,5 @@ input[type=checkbox] {
 	color: #FFF;
 	padding: 10px;
 }
+
+

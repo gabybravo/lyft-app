@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
-<body id="map">
+<body>
   <div class="naveg">
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-perfil">
       <div id="sidebar"> 
@@ -43,23 +43,20 @@
         <a href="#"><i class="fa fa-gift" aria-hidden="true"></i></a>
     </div>
   </div>
-<<<<<<< HEAD
+
+  <!-- MAPA -->
+  <section class="mapa-fondo">
+    <div class="el-mapa" id="map"></div>
+  </section>
 
   <!-- AQUÍ ESTA EL INPUT DEL MAPA -->
   <div class="contenedor-bottom"> <!-- **AGREGE UNA CLASE PARA JUNTARLOS Y BAJARLOS Y LO SEPARE DE CONTAINER Y ROW-->
-      <input type="text" name="ruta" class="ruta-input" id="trazar-ruta">
-      <button type="button" class="btn btn-pickup" id="trazar">Set pickup</button>
+      <input type="text" name="ruta" class="ruta-input" id="destino">
+      <button type="button" class="btn btn-pickup" id="ruta">Set pickup</button>
   </div>
 
   <!--Google Maps -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHmt5g1VxNEMohzg_AcgaxXYmeeh-P_vM&callback=initMap"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-=======
-  <!-- Maps con este src se puede hacer lo del autocomplete-->
-  <!--CLAVE AIzaSyCHmt5g1VxNEMohzg_AcgaxXYmeeh-P_vM -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHmt5g1VxNEMohzg_AcgaxXYmeeh-P_vM&libraries=places&callback=initMap"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
->>>>>>> 9f28124f20775a79dd1f861aa612689d5d1c5147
+  <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAF_qM5T-gRhx91DWMlCqrwRIea4HPTwCA&callback=initMap&libraries=places"></script>
 	<!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap -->
@@ -68,5 +65,7 @@
   <script type="text/javascript" src="assets/js/app.js"></script>
   <!-- JS Menú -->
   <script type="text/javascript" src="assets/js/menu.js"></script>
+  <!-- JS MAP -->
+  <script type="text/javascript" src="assets/js/map.js"></script>
 </body>
 </html>
