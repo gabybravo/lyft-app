@@ -43,8 +43,8 @@ function saveSettings() {
 function success(position) {
  var mapcanvas = document.createElement('div');
  mapcanvas.id = 'mapcanvas';
- mapcanvas.style.height = '400px';
- mapcanvas.style.width = '560px';
+ mapcanvas.style.height = '700px';
+ mapcanvas.style.width = '600px';
 
  document.querySelector('#map').appendChild(mapcanvas);
 

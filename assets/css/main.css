@@ -204,7 +204,7 @@ input[type=number] {
 
 .icon-logo{
 	text-align: center;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 
 .icon-logo img{
@@ -342,7 +342,7 @@ input[type=number] {
 	width: 80%;
 }
 
-/*Sección MAPA*/
+/*Sección MAPA y MENÚ*/
 
 .naveg {
 	padding-left: 33px;
@@ -353,7 +353,8 @@ input[type=number] {
 
 #map {
 	z-index: 0;
-    width: 100%;
+    height:100vh;
+	width: 100vw;
     top: 0px;
     position: relative;
 	padding-bottom: 75%; 
@@ -404,11 +405,10 @@ hr {
 	color: #FF00BF;
 }
 
-<<<<<<< HEAD
-.manubrio {
-	font-size: 10px;
+a.ultimo-fondo {
+	color: #8178aa;
 }
-=======
+
 /* MODAL */
 #myModalLabel{
 	color: #ff00bf;
@@ -430,4 +430,4 @@ hr {
 	margin: .5em auto;
 	padding: .5em;
 }
->>>>>>> 141f86a60be54d5bd2420df4d88319eed3bd4272
+
