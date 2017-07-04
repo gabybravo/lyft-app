@@ -45,6 +45,20 @@ table {
 /*ESTILOS CSS*/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+.iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/img/flags.png");}
+  
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.1.0/img/flags@2x.png");}
+}
+
+input.error {
+  border: 1px solid #FF7C7C;
+}
+
+>>>>>>> 47af20ebafa3ff55745f873f62e727c92ac62f87
 /*ESTILOS GENERALES*/
 
 body {
